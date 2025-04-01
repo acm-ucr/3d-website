@@ -3,15 +3,27 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="font-francois-one p-5 bg-3d-orange-primary items-center text-amber-50 text-4xl flex flex-row">
-      <div className="flex justify-start items-center w-1/2">
-        <Image src={"/Logo.png"} alt={"Logo"} width={70} height={70} className="m-1 border-amber-50 border-2 rounded-full"></Image>
+    <nav className="font-francois-one bg-3d-orange-primary flex flex-row items-center p-5 text-4xl text-amber-50">
+      <div className="flex w-1/2 items-center justify-start">
+        <Image
+          src={"/Logo.png"}
+          alt={"Logo"}
+          width={70}
+          height={70}
+          className="m-1 rounded-full border-2 border-amber-50"
+        ></Image>
         <Link href="/home">3D Club</Link>
       </div>
-      <div className="flex justify-evenly w-1/2">
-        <Link href="/about" className="">ABOUT</Link>
-        <Link href="/board" className="">BOARD</Link>
-        <Link href="/gallery" className="">GALLERY</Link>
+      <div className="flex w-1/2 justify-evenly">
+        <Link href="/about" className="">
+          ABOUT
+        </Link>
+        <Link href="/board" className="">
+          BOARD
+        </Link>
+        <Link href="/gallery" className="">
+          GALLERY
+        </Link>
       </div>
     </nav>
   );
