@@ -11,7 +11,7 @@
 
 ## Figma
 
-[3D Club at UCR Website Figma Design File](https://www.figma.com/)
+[3D Club at UCR Website Figma Design File](https://www.figma.com/design/M5lBBZmtmt9YTyDL8j5lZk/3D-Club-Website)
 
 ## Node.js
 
