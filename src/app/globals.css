@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 @import "tailwindcss";
 
 @config '../../tailwind.config.ts';
+
+@theme {
+  --color-3d-orange-primary: #d95d39;
+  --color-3d-blue-primary: #6590e2;
+  --color-3d-blue-secondary: #2a68df;
+  --color-3d-red-primary: #d34043;
+  --color-3d-red-sceondary: #942f30;
+
+  --font-fraunces: "Fraunces";
+  --font-francois-one: "Francois-One";
+}
