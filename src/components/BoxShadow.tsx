@@ -16,7 +16,7 @@ const BoxShadow: React.FC<BoxShadowProp> = ({
   children,
 }) => {
   return (
-    <div className="">
+    <div className="flex">
       <div className={`${boxColor} ${boxPadding} ${boxShadow}`}>
         <div
           className={`${textSize} font-fraunces [text-shadow:_0_6px_3px_rgba(0,0,0,0.2)]`}
