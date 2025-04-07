@@ -4,7 +4,7 @@ const GalleryLanding = () => {
   return (
     <div className="relative h-screen w-screen">
       <Image
-        src="/gallery/background.png"
+        src="/gallery/background.webp"
         alt="Gallery background"
         fill
         className="-z-10 object-cover object-[center_20%]"
