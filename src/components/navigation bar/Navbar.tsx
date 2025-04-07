@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "@/public/Logo.webp";
 
 const Navbar = () => {
   return (
     <nav className="font-francois-one bg-3d-orange-primary flex flex-row items-center px-5 py-2 text-4xl text-amber-50">
       <div className="flex w-1/2 items-center justify-start">
         <Image
-          src={"/Logo.webp"}
+          src={Logo}
           alt={"Logo"}
           width={70}
           height={70}
