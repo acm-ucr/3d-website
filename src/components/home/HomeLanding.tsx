@@ -11,7 +11,7 @@ const HomeLanding = () => {
           <BoxShadow
             boxColor=" bg-3d-blue-primary "
             boxShadow="shadow-3d-blue-secondary"
-            boxPadding="pr-15 pl-25 py-15"h
+            boxPadding="pr-15 pl-25 py-15"
           >
             3D Club @ UCR
           </BoxShadow>
