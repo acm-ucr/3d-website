@@ -4,7 +4,7 @@ import BoxShadow from "../BoxShadow";
 const GalleryLanding = () => {
   return (
     <div className="relative h-screen w-screen">
-      <div className="-z-10 absolute inset-0 bg-black/15">
+      <div className="absolute inset-0 -z-10 bg-black/15">
         <Image
           src="/gallery/background.webp"
           alt="Gallery background"
@@ -18,9 +18,7 @@ const GalleryLanding = () => {
           boxShadow="shadow-3d-red-secondary"
           boxPadding="px-10 py-3"
         >
-          <div className="text-white text-5xl">
-            Gallery:
-          </div>        
+          <div className="text-5xl text-white">Gallery:</div>
         </BoxShadow>
       </div>
     </div>
