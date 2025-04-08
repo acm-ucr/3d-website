@@ -1,9 +1,10 @@
-// pr test
+// // pr test
+import HomeLanding from "@/components/home/HomeLanding";
 
 const Home = () => {
   return (
-    <div className="font-francois-one bg-3d-blue-primary flex h-screen w-screen items-center justify-center">
-      Hello World
+    <div className="">
+      <HomeLanding />
     </div>
   );
 };
