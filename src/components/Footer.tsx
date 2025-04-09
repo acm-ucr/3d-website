@@ -41,7 +41,7 @@ const Footer = () => {
             <div
               className={
                 "h-full w-full [&>svg]:h-full [&>svg]:w-full [&>svg]:fill-black"
-              } // Ensure SVG fills div and set fill color if needed
+              }
               dangerouslySetInnerHTML={{ __html: svgLinktree }}
             />
           </div>
