@@ -20,7 +20,8 @@ const fraunces = Fraunces({
 
 export const metadata = {
   title: "3D at UCR",
-  description: "We're a 3D art organization that explores all types of media—from computer software and Minecraft builds to clay and more!",
+  description:
+    "We're a 3D art organization that explores all types of media—from computer software and Minecraft builds to clay and more!",
 };
 
 type LayoutProps = {
