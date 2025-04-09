@@ -1,7 +1,7 @@
-import GalleryLanding from "@/components/Gallery/GalleryLanding";
+import Landing from "@/components/Gallery/Landing";
 
 const Gallery = () => {
-  return <GalleryLanding />;
+  return <Landing />;
 };
 
 export default Gallery;
