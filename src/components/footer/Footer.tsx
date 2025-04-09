@@ -7,17 +7,23 @@ import Linktree from "@/public/linktree.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-3d-orange-primary font-francois-one flex flex-row items-center p-10 text-amber-50">
-      <div className={"flex w-1/2 items-center"}>
+    <footer
+      className={
+        "bg-3d-orange-primary font-francois-one flex flex-row items-center px-[3vw] py-[3vh] text-amber-50"
+      }
+    >
+      <div className={"flex w-1/2 items-center justify-around"}>
         <Image
           src={Logo}
           alt={"Logo"}
-          className={"rounded-full border-3 border-amber-50"}
+          className={"h-1/6 w-1/6 rounded-full border-[0.25vw] border-amber-50"}
         />
-        <p className={"px-4 text-4xl"}>3D Club @UCR</p>
+        <p className={"text-[2.5vw]"}>3D Club @UCR</p>
       </div>
-      <div className={"mx-4 h-20 border-2 border-amber-50"}></div>
-      <div className={"flex w-1/2 items-center justify-center space-x-4"}>
+      <div
+        className={"mx-[0.8vw] h-[10vh] border-[0.1vw] border-amber-50"}
+      ></div>
+      <div className={"flex w-1/2 items-center justify-around"}>
         <Link
           href={
             "https://linktr.ee/3DUCR?utm_source=linktree_profile_share&ltsid=5e067946-122b-4317-903f-4c0d91d545ff"
@@ -26,12 +32,16 @@ const Footer = () => {
         >
           <div
             className={
-              "flex h-30 w-30 items-center justify-center rounded-full bg-amber-50"
+              "flex h-1/3 w-1/3 items-center justify-center rounded-full bg-amber-50 p-[5%]"
             }
           >
-            <Image src={Linktree} alt={"Linktree"} className={"h-20 w-20"} />
+            <Image
+              src={Linktree}
+              alt={"Linktree"}
+              className={"h-full w-full"}
+            />
           </div>
-          <p className={"text-2xl"}>linktree</p>
+          <p className={"text-[1vw]"}>linktree</p>
         </Link>
         <Link
           href={"https://www.instagram.com/3d_at_ucr/"}
@@ -39,12 +49,16 @@ const Footer = () => {
         >
           <div
             className={
-              "flex h-30 w-30 items-center justify-center rounded-full bg-amber-50"
+              "flex h-1/3 w-1/3 items-center justify-center rounded-full bg-amber-50 p-[5%]"
             }
           >
-            <Image src={Instagram} alt={"Instagram"} className={"h-20 w-20"} />
+            <Image
+              src={Instagram}
+              alt={"Instagram"}
+              className={"h-full w-full"}
+            />
           </div>
-          <p className={"text-2xl"}>instagram</p>
+          <p className={"text-[1vw]"}>instagram</p>
         </Link>
         <Link
           href={"https://discord.gg/QfB6yVWpSy"}
@@ -52,12 +66,12 @@ const Footer = () => {
         >
           <div
             className={
-              "flex h-30 w-30 items-center justify-center rounded-full bg-amber-50 object-contain"
+              "flex h-1/3 w-1/3 items-center justify-center rounded-full bg-amber-50 p-[5%]"
             }
           >
-            <Image src={Discord} alt={"Discord"} className={"h-20 w-20"} />
+            <Image src={Discord} alt={"Discord"} className={"h-full w-full"} />
           </div>
-          <p className={"text-2xl"}>discord</p>
+          <p className={"text-[1vw]"}>discord</p>
         </Link>
       </div>
     </footer>
