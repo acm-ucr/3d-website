@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/Logo.webp";
-import Discord from "@/public/discord.webp";
-import Instagram from "@/public/instagram.webp";
-import Linktree from "@/public/linktree.webp";
+import Discord from "@/public/discord.svg";
+import Instagram from "@/public/instagram.svg";
+import Linktree from "@/public/linktree.svg";
 
 const Footer = () => {
   return (
@@ -24,36 +24,40 @@ const Footer = () => {
           }
           className={"flex flex-col items-center"}
         >
-          <div className={"h-10 w-10 rounded-full bg-amber-50 p-2"}>
-            <Image
-              src={Linktree}
-              alt={"Linktree"}
-              className={"object-contain"}
-            />
+          <div
+            className={
+              "flex h-30 w-30 items-center justify-center rounded-full bg-amber-50"
+            }
+          >
+            <Image src={Linktree} alt={"Linktree"} className={"h-20 w-20"} />
           </div>
-          <p>linktree</p>
+          <p className={"text-2xl"}>linktree</p>
         </Link>
         <Link
           href={"https://www.instagram.com/3d_at_ucr/"}
           className={"flex flex-col items-center"}
         >
-          <div className={"h-10 w-10 rounded-full bg-amber-50 p-2"}>
-            <Image
-              src={Instagram}
-              alt={"Instagram"}
-              className={"object-contain"}
-            />
+          <div
+            className={
+              "flex h-30 w-30 items-center justify-center rounded-full bg-amber-50"
+            }
+          >
+            <Image src={Instagram} alt={"Instagram"} className={"h-20 w-20"} />
           </div>
-          <p>instagram</p>
+          <p className={"text-2xl"}>instagram</p>
         </Link>
         <Link
           href={"https://discord.gg/QfB6yVWpSy"}
           className={"flex flex-col items-center"}
         >
-          <div className={"h-10 w-10 rounded-full bg-amber-50 p-2"}>
-            <Image src={Discord} alt={"Discord"} className={"object-contain"} />
+          <div
+            className={
+              "flex h-30 w-30 items-center justify-center rounded-full bg-amber-50 object-contain"
+            }
+          >
+            <Image src={Discord} alt={"Discord"} className={"h-20 w-20"} />
           </div>
-          <p>discord</p>
+          <p className={"text-2xl"}>discord</p>
         </Link>
       </div>
     </footer>
