@@ -6,7 +6,7 @@ const HomeLanding = () => {
   return (
     <div className="relative flex h-screen">
       <div className="absolute top-0 left-0 flex h-screen w-1/2 items-start justify-start">
-        <div className="px-60 py-55 text-center text-9xl">
+        <div className="px-[10%] py-[8%] text-center text-9xl">
           {" "}
           <BoxShadow
             boxColor=" bg-3d-blue-primary "
@@ -19,7 +19,7 @@ const HomeLanding = () => {
       </div>
 
       <div className="absolute right-0 bottom-5 flex h-screen w-1/2 items-end">
-        <div className="px-4 py-20 pl-96 text-center text-9xl text-black">
+        <div className="px-4 py-[8%] pl-[20%] text-center text-9xl text-black">
           <BoxShadow
             boxColor=" bg-3d-blue-primary "
             boxShadow="shadow-3d-blue-secondary"
