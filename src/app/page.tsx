@@ -1,3 +1,4 @@
+import MemberCard from "@/components/Board/MemberCard";
 import BoxShadow from "@/components/BoxShadow";
 
 const Home = () => {
@@ -20,6 +21,8 @@ const Home = () => {
             </ul>
           </div>
         </BoxShadow>
+
+        <MemberCard />
 
         {/* Another example */}
         <BoxShadow
