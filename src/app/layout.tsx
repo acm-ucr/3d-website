@@ -3,7 +3,7 @@ import "./globals.css";
 import { Francois_One, Fraunces } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 // const inter = Inter({ subsets: ["latin"] });
 
 const francois_one = Francois_One({
@@ -34,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <ReactQueryClientProvider>
           <Navbar />
           {children}
+          <Footer />
         </ReactQueryClientProvider>
       </body>
     </html>
