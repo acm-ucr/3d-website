@@ -22,7 +22,7 @@ const NotFound = () => {
         textSize={"text-[1.25vw]"}
         custom_style="flex justify-center"
       >
-        <Link href={"/home"}>Back To Home</Link>
+        <Link href={"/"}>Back To Home</Link>
       </BoxShadow>
     </div>
   );
