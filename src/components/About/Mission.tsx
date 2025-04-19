@@ -3,15 +3,15 @@ import Image from "next/image";
 const Mission = () => {
   return (
     <div>
-
-      <Image 
-        src="/about/mission.png"
-        alt="Mission background"
-        width={500}
-        height={500}
-        className="h-auto w-full"
-      />
-      
+      <div className="h-96 overflow-hidden flex items-center justify-center">
+        <Image 
+          src="/about/mission.png"
+          alt="Mission background"
+          width={500}
+          height={500}
+          className="h-auto w-full"
+        />
+      </div>
     </div>
   );
 };
