@@ -6,12 +6,12 @@ const HomeLanding = () => {
   return (
     <div className="relative flex h-screen">
       <div className="absolute top-0 left-0 flex h-screen w-1/2 items-start justify-start">
-        <div className="w-full px-[12%] py-[7.5%] text-center text-8xl">
+        <div className="w-full px-[12%] py-[7.5%] text-center text-5xl">
           {" "}
           <BoxShadow
-            boxColor=" bg-3d-blue-primary "
+            boxColor="bg-3d-blue-primary"
             boxShadow="shadow-3d-blue-secondary"
-            boxPadding="pr-[10%] pl-[10%] py-15"
+            boxPadding="px-[8%] py-[4%]"
           >
             3D Club @ UCR
           </BoxShadow>
@@ -19,11 +19,11 @@ const HomeLanding = () => {
       </div>
 
       <div className="absolute right-0 bottom-5 flex h-screen w-1/2 items-end">
-        <div className="w-full py-[7.5%] pl-[25%] text-center text-7xl text-black">
+        <div className="w-full py-[7.5%] pl-[25%] text-center text-3xl text-black">
           <BoxShadow
             boxColor=" bg-3d-blue-primary "
             boxShadow="shadow-3d-blue-secondary"
-            boxPadding="pr-[10%] pl-[10%] py-15"
+            boxPadding="px-[8%] py-[4%]"
           >
             Welcome to 3D Club at UCR!
           </BoxShadow>
