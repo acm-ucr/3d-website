@@ -22,6 +22,18 @@ const Mission = () => {
         >
           Our Mission:
         </BoxShadow>
+        <BoxShadow
+          boxColor="bg-3d-blue-primary"
+          boxShadow="shadow-3d-blue-secondary"
+          boxPadding="px-5 py-2"
+          custom_style="absolute bottom-[7%] right-[5%] text-3xl text-black text-center"
+        >
+          We aim to create a <br />
+          supportive environment <br />
+          where students can share <br />
+          and get advice on 3D art <br />
+          and projects.
+        </BoxShadow>
       </div>
     </div>
   );
