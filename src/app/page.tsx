@@ -20,7 +20,7 @@ const Home = () => {
             </ul>
           </div>
         </BoxShadow>
-        
+
         {/* Another example */}
         <BoxShadow
           boxColor="bg-3d-blue-primary"
