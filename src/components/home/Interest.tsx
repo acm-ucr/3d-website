@@ -23,7 +23,7 @@ const Interest = () => (
                     z-10 flex justify-center whitespace-nowrap
                     text-[clamp(1rem,5vw,2rem)]"
     >
-      Interested in becoming a member?
+      Interested&nbsp;in&nbsp;becoming&nbsp;a&nbsp;member?
     </BoxShadow>
 
     <BoxShadow
