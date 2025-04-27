@@ -7,7 +7,7 @@ const Mission = () => {
       <div className="relative aspect-[2.35/1] w-full">
         <div className="absolute inset-0 flex justify-center overflow-hidden">
           <Image
-            src="/about/mission.png"
+            src="/about/mission.webp"
             alt="Mission background"
             width={500}
             height={500}
