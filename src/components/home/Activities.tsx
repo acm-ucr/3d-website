@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 import clayday1 from "@/public/home/activities/clayday_1.png";
 import clayday2 from "@/public/home/activities/clayday_2.jpg";
@@ -9,6 +15,7 @@ import origami1 from "@/public/home/activities/origami_1.jpg";
 import origami2 from "@/public/home/activities/origami_2.jpg";
 import shrekiversary1 from "@/public/home/activities/shrekiversary_1.jpg";
 import shrekiversary2 from "@/public/home/activities/shrekiversary_2.jpg";
+import BoxShadow from "../BoxShadow";
 
 const Activities = () => {
   const activityImages = [
@@ -23,14 +30,14 @@ const Activities = () => {
   ];
 
   return (
-    <div className="w-full bg-3d-orange-secondary py-16">
-      <Carousel className="w-full max-w-4xl mx-auto">
+    <div className="bg-3d-orange-secondary w-full py-16">
+      <Carousel className="mx-auto w-full max-w-4xl">
         <CarouselContent>
           {activityImages.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative aspect-video border-8 border-white rounded-sm">
-                <Image 
-                  src={image.src} 
+              <div className="relative aspect-video rounded-sm border-8 border-white">
+                <Image
+                  src={image.src}
                   alt={image.alt}
                   fill
                   className="object-cover p-5"
@@ -43,6 +50,14 @@ const Activities = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+
+      <BoxShadow
+        boxColor="bg-3d-blue-primary"
+        boxShadow="shadow-3d-blue-secondary"
+        boxPadding="px-[8%] py-[4%]"
+      >
+        3D Club @ UCR
+      </BoxShadow>
     </div>
   );
 };
