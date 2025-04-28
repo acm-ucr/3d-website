@@ -30,7 +30,15 @@ const Activities = () => {
   ];
 
   return (
-    <div className="bg-3d-orange-secondary w-full py-16">
+    <div className="bg-3d-orange-secondary w-full pt-16">
+      <BoxShadow
+        boxColor="bg-3d-red-primary"
+        boxShadow="shadow-3d-red-secondary"
+        boxPadding="px-8 py-3"
+        custom_style="text-5xl text-white ml-12 -translate-y-[15vh] relative"
+      >
+        Activities:
+      </BoxShadow>
       <Carousel className="mx-auto w-full max-w-4xl">
         <CarouselContent>
           {activityImages.map((image, index) => (
@@ -52,9 +60,10 @@ const Activities = () => {
       </Carousel>
 
       <BoxShadow
-        boxColor="bg-3d-blue-primary"
-        boxShadow="shadow-3d-blue-secondary"
-        boxPadding="px-[8%] py-[4%]"
+        boxColor="bg-3d-red-primary"
+        boxShadow="shadow-3d-red-secondary"
+        boxPadding="px-10 py-3"
+        custom_style="mt-6 justify-center text-5xl text-white pb-12"
       >
         3D Club @ UCR
       </BoxShadow>
