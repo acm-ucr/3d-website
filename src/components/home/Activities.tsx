@@ -30,12 +30,12 @@ const Activities = () => {
   ];
 
   return (
-    <div className="bg-3d-orange-secondary w-full pt-16">
+    <div className="bg-3d-orange-secondary w-full pt-4">
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
         boxPadding="px-8 py-3"
-        custom_style="text-5xl text-white ml-12 -translate-y-[15vh] relative"
+        custom_style="text-5xl text-white ml-12 -translate-y-[8vh] relative"
       >
         Activities:
       </BoxShadow>
