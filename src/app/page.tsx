@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="font-francois-one flex h-screen w-screen items-center justify-center">
       {/* Lines 7-31 are for example */}
-      <div className="flex space-x-10 bg-3d-blue-primary">
+      <div className="bg-3d-blue-primary flex space-x-10">
         <Phillip> hello </Phillip>
         {/* This is just an example piece to show the BoxShadow component in use */}
         <BoxShadow
