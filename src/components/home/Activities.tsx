@@ -11,14 +11,14 @@ import {
 } from "@/components/ui/carousel";
 import { useState, useEffect } from "react";
 
-import clayday1 from "@/public/home/activities/clayday_1.png";
-import clayday2 from "@/public/home/activities/clayday_2.jpg";
-import model1 from "@/public/home/activities/model_1.jpg";
-import model2 from "@/public/home/activities/model_2.jpg";
-import origami1 from "@/public/home/activities/origami_1.jpg";
-import origami2 from "@/public/home/activities/origami_2.jpg";
-import shrekiversary1 from "@/public/home/activities/shrekiversary_1.jpg";
-import shrekiversary2 from "@/public/home/activities/shrekiversary_2.jpg";
+import clayday1 from "@/public/home/activities/clayday_1.webp";
+import clayday2 from "@/public/home/activities/clayday_2.webp";
+import model1 from "@/public/home/activities/model_1.webp";
+import model2 from "@/public/home/activities/model_2.webp";
+import origami1 from "@/public/home/activities/origami_1.webp";
+import origami2 from "@/public/home/activities/origami_2.webp";
+import shrekiversary1 from "@/public/home/activities/shrekiversary_1.webp";
+import shrekiversary2 from "@/public/home/activities/shrekiversary_2.webp";
 
 import BoxShadow from "../BoxShadow";
 
