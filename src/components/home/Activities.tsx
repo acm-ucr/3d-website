@@ -78,7 +78,7 @@ const Activities = () => {
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
-        boxPadding="px-10 py-3"
+        boxPadding="px-16 py-3"
         custom_style="mt-6 justify-center text-5xl text-white pb-12"
       >
         {activityImages[index].alt}
