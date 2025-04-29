@@ -71,8 +71,12 @@ const Activities = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 fixed top-1/2 left-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white">
+          <span className="text-2xl">&lt;</span>
+        </CarouselPrevious>
+        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 fixed top-1/2 right-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white">
+          <span className="text-2xl">&gt;</span>
+        </CarouselNext>
       </Carousel>
 
       <BoxShadow
