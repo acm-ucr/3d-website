@@ -55,28 +55,26 @@ const Activities = () => {
       >
         Activities:
       </BoxShadow>
-      <Carousel className="mx-auto w-full max-w-4xl" setApi={setApi}>
-        <CarouselContent>
-          {activityImages.map((image, index) => (
-            <CarouselItem key={index}>
-              <div className="relative aspect-video rounded-sm border-8 border-white">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover p-4"
-                  priority={index === 0}
-                />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 fixed top-1/2 left-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white">
-          <span className="text-2xl">&lt;</span>
-        </CarouselPrevious>
-        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 fixed top-1/2 right-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white">
-          <span className="text-2xl">&gt;</span>
-        </CarouselNext>
+      <Carousel className="w-full relative" setApi={setApi}>
+        <div className="mx-auto w-full max-w-4xl">
+          <CarouselContent>
+            {activityImages.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="relative aspect-video rounded-sm border-8 border-white">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover p-4"
+                    priority={index === 0}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </div>
+        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white" />
+        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white" />
       </Carousel>
 
       <BoxShadow
