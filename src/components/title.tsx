@@ -1,8 +1,15 @@
-const Title = () => {
+
+interface TitleProp {
+  children: React.ReactNode;
+}
+const Title: React.FC<TitleProp> = ({
+  children,
+
+}) => {
   return (
     <div>
-      <p className="text-size = 60px; text-decoration-line: underline; text-#FFFFFF">
-        What We Do:{" "}
+      <p className="text-6xl text-white underline"> 
+        {children}
       </p>
     </div>
   );

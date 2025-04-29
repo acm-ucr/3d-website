@@ -1,10 +1,11 @@
 import BoxShadow from "@/components/BoxShadow";
-
+import Phillip from "@/components/title";
 const Home = () => {
   return (
     <div className="font-francois-one flex h-screen w-screen items-center justify-center">
       {/* Lines 7-31 are for example */}
-      <div className="flex space-x-10">
+      <div className="flex space-x-10 bg-3d-blue-primary">
+        <Phillip> hello </Phillip>
         {/* This is just an example piece to show the BoxShadow component in use */}
         <BoxShadow
           boxColor="bg-3d-red-primary"
@@ -12,7 +13,7 @@ const Home = () => {
           boxPadding="pr-8 pl-3 py-3"
         >
           <div className="text-white">
-            <p className="text-xl">Past Collaborations</p>
+            <p className="text-xl">test</p>
             <ul className="list-disc pl-8">
               <li>Clay Day with Starving Artists</li>
               <li>Shrek Anniversary with Starving Artists</li>
