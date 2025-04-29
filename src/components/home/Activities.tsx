@@ -55,7 +55,7 @@ const Activities = () => {
       >
         Activities:
       </BoxShadow>
-      <Carousel className="w-full relative" setApi={setApi}>
+      <Carousel className="relative w-full" setApi={setApi}>
         <div className="mx-auto w-full max-w-4xl">
           <CarouselContent>
             {activityImages.map((image, index) => (
@@ -73,8 +73,8 @@ const Activities = () => {
             ))}
           </CarouselContent>
         </div>
-        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white" />
-        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-4 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white" />
+        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-0 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white" />
+        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-0 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-lg hover:text-white" />
       </Carousel>
 
       <BoxShadow
