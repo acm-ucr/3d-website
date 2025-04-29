@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   Carousel,
@@ -5,7 +7,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import { useState, useEffect } from "react";
 
 import clayday1 from "@/public/home/activities/clayday_1.png";
 import clayday2 from "@/public/home/activities/clayday_2.jpg";
@@ -15,9 +19,21 @@ import origami1 from "@/public/home/activities/origami_1.jpg";
 import origami2 from "@/public/home/activities/origami_2.jpg";
 import shrekiversary1 from "@/public/home/activities/shrekiversary_1.jpg";
 import shrekiversary2 from "@/public/home/activities/shrekiversary_2.jpg";
+
 import BoxShadow from "../BoxShadow";
 
 const Activities = () => {
+  const [index, setIndex] = useState(0);
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    api.on("select", () => {
+      setIndex(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   const activityImages = [
     { src: clayday1, alt: "Clay Day" },
     { src: clayday2, alt: "Clay Day" },
@@ -39,7 +55,7 @@ const Activities = () => {
       >
         Activities:
       </BoxShadow>
-      <Carousel className="mx-auto w-full max-w-4xl">
+      <Carousel className="mx-auto w-full max-w-4xl" setApi={setApi}>
         <CarouselContent>
           {activityImages.map((image, index) => (
             <CarouselItem key={index}>
@@ -65,7 +81,7 @@ const Activities = () => {
         boxPadding="px-10 py-3"
         custom_style="mt-6 justify-center text-5xl text-white pb-12"
       >
-        3D Club @ UCR
+        {activityImages[index].alt}
       </BoxShadow>
     </div>
   );
