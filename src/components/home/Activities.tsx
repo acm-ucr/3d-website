@@ -46,12 +46,12 @@ const Activities = () => {
   ];
 
   return (
-    <div className="bg-3d-orange-secondary w-full pt-4">
+    <div className="bg-3d-orange-secondary w-full">
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
         boxPadding="px-8 py-3"
-        custom_style="text-5xl text-white ml-12 -translate-y-[8vh] relative"
+        custom_style="text-5xl text-white ml-12 -translate-y-[6vh] relative"
       >
         Activities:
       </BoxShadow>
@@ -64,7 +64,7 @@ const Activities = () => {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover p-5"
+                  className="object-cover p-4"
                   priority={index === 0}
                 />
               </div>
