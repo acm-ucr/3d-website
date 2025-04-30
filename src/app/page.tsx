@@ -1,8 +1,13 @@
+import HomeLanding from "@/components/home/HomeLanding";
+import Interest from "@/components/home/Interest";
+import Activities from "@/components/home/Activities";
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Hello World
-    </div>
+    <>
+      <HomeLanding />
+      <Activities />
+      <Interest />
+    </>
   );
 };
 
