@@ -16,35 +16,36 @@ const Footer = () => {
     >
       <div
         className={
-          "flex w-full items-center justify-center gap-x-4 sm:w-1/2 sm:justify-start"
+          "order-3 mt-2 mb-10 flex w-full items-center justify-center gap-x-4 sm:order-none sm:mt-0 sm:mb-0 sm:w-1/2 sm:justify-start"
         }
       >
-        {" "}
+        <p
+          className={
+            "order-1 text-xl sm:order-2 sm:text-2xl md:text-3xl lg:text-4xl"
+          }
+        >
+          3D Club @UCR
+        </p>
         <Image
           src={Logo}
           alt={"Logo"}
           className={
-            "h-16 w-16 rounded-full border-2 border-amber-50 md:h-20 md:w-20 lg:h-24 lg:w-24"
+            "order-2 h-16 w-16 rounded-full border-2 border-amber-50 sm:order-1 md:h-20 md:w-20 lg:h-24 lg:w-24"
           }
         />
-        <p className={"text-xl sm:text-2xl md:text-3xl lg:text-4xl"}>
-          {" "}
-          3D Club @UCR
-        </p>
       </div>
 
       <div
         className={
-          "my-4 h-px w-3/4 border-t border-amber-50 sm:mx-4 sm:my-0 sm:h-24 sm:w-px sm:border-t-0 sm:border-l"
+          "order-2 my-4 h-px w-3/4 border-t-2 border-amber-50 sm:order-none sm:mx-4 sm:my-0 sm:h-24 sm:w-px sm:border-t-0 sm:border-l-2"
         }
       ></div>
 
       <div
         className={
-          "flex w-full items-center justify-center gap-x-8 sm:w-1/2 md:gap-x-12"
+          "order-1 flex w-full items-center justify-center gap-x-2 sm:order-none sm:w-1/2 md:gap-x-12"
         }
       >
-        {" "}
         <Link
           href={
             "https://linktr.ee/3DUCR?utm_source=linktree_profile_share&ltsid=5e067946-122b-4317-903f-4c0d91d545ff"
@@ -52,6 +53,7 @@ const Footer = () => {
           className={"flex w-16 flex-col items-center sm:w-20"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Linktree"
         >
           <div
             className={
@@ -66,13 +68,15 @@ const Footer = () => {
               dangerouslySetInnerHTML={{ __html: svgLinktree }}
             />
           </div>
-          <p className={"text-xs sm:text-sm"}>linktree</p>{" "}
+          <p className={"hidden text-xs sm:block sm:text-sm"}>linktree</p>
         </Link>
+
         <Link
           href={"https://www.instagram.com/3d_at_ucr/"}
           className={"flex w-16 flex-col items-center sm:w-20"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram"
         >
           <div
             className={
@@ -87,13 +91,15 @@ const Footer = () => {
               dangerouslySetInnerHTML={{ __html: svgInstagram }}
             />
           </div>
-          <p className={"text-xs sm:text-sm"}>instagram</p>{" "}
+          <p className={"hidden text-xs sm:block sm:text-sm"}>instagram</p>
         </Link>
+
         <Link
           href={"https://discord.gg/QfB6yVWpSy"}
           className={"flex w-16 flex-col items-center sm:w-20"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Discord"
         >
           <div
             className={
@@ -108,7 +114,7 @@ const Footer = () => {
               dangerouslySetInnerHTML={{ __html: svgDiscord }}
             />
           </div>
-          <p className={"text-xs sm:text-sm"}>discord</p>{" "}
+          <p className={"hidden text-xs sm:block sm:text-sm"}>discord</p>
         </Link>
       </div>
     </footer>
