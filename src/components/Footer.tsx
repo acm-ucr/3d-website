@@ -11,30 +11,51 @@ const Footer = () => {
   return (
     <footer
       className={
-        "bg-3d-orange-primary font-francois-one flex flex-row items-center px-[3vw] py-[3vh] text-amber-50"
+        "bg-3d-orange-primary font-francois-one flex flex-col items-center px-6 py-4 text-amber-50 sm:flex-row sm:px-8 sm:py-6 md:px-12"
       }
     >
-      <div className={"justify-left flex w-1/2 items-center gap-x-[1vw]"}>
+      <div
+        className={
+          "flex w-full items-center justify-center gap-x-4 sm:w-1/2 sm:justify-start"
+        }
+      >
+        {" "}
         <Image
           src={Logo}
           alt={"Logo"}
-          className={"h-1/6 w-1/6 rounded-full border-[0.25vw] border-amber-50"}
+          className={
+            "h-16 w-16 rounded-full border-2 border-amber-50 md:h-20 md:w-20 lg:h-24 lg:w-24"
+          }
         />
-        <p className={"text-[2.5vw]"}>3D Club @UCR</p>
+        <p className={"text-xl sm:text-2xl md:text-3xl lg:text-4xl"}>
+          {" "}
+          3D Club @UCR
+        </p>
       </div>
+
       <div
-        className={"mx-[0.8vw] h-[10vh] border-[0.1vw] border-amber-50"}
+        className={
+          "my-4 h-px w-3/4 border-t border-amber-50 sm:mx-4 sm:my-0 sm:h-24 sm:w-px sm:border-t-0 sm:border-l"
+        }
       ></div>
-      <div className={"flex w-1/2 items-center justify-center gap-x-[3vw]"}>
+
+      <div
+        className={
+          "flex w-full items-center justify-center gap-x-8 sm:w-1/2 md:gap-x-12"
+        }
+      >
+        {" "}
         <Link
           href={
             "https://linktr.ee/3DUCR?utm_source=linktree_profile_share&ltsid=5e067946-122b-4317-903f-4c0d91d545ff"
           }
-          className={"flex w-[7.5%] flex-col items-center"}
+          className={"flex w-16 flex-col items-center sm:w-20"}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div
             className={
-              "flex items-center justify-center rounded-full bg-amber-50 p-[10%]"
+              "mb-1 flex h-10 w-10 items-center justify-center rounded-full bg-amber-50 p-2 sm:h-12 sm:w-12"
             }
             aria-hidden="true"
           >
@@ -45,15 +66,17 @@ const Footer = () => {
               dangerouslySetInnerHTML={{ __html: svgLinktree }}
             />
           </div>
-          <p className={"text-[1vw]"}>linktree</p>
+          <p className={"text-xs sm:text-sm"}>linktree</p>{" "}
         </Link>
         <Link
           href={"https://www.instagram.com/3d_at_ucr/"}
-          className={"flex w-[7.5%] flex-col items-center"}
+          className={"flex w-16 flex-col items-center sm:w-20"}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div
             className={
-              "flex items-center justify-center rounded-full bg-amber-50 p-[10%]"
+              "mb-1 flex h-10 w-10 items-center justify-center rounded-full bg-amber-50 p-2 sm:h-12 sm:w-12"
             }
             aria-hidden="true"
           >
@@ -64,15 +87,17 @@ const Footer = () => {
               dangerouslySetInnerHTML={{ __html: svgInstagram }}
             />
           </div>
-          <p className={"text-[1vw]"}>instagram</p>
+          <p className={"text-xs sm:text-sm"}>instagram</p>{" "}
         </Link>
         <Link
           href={"https://discord.gg/QfB6yVWpSy"}
-          className={"flex w-[7.5%] flex-col items-center"}
+          className={"flex w-16 flex-col items-center sm:w-20"}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div
             className={
-              "flex items-center justify-center rounded-full bg-amber-50 p-[10%]"
+              "mb-1 flex h-10 w-10 items-center justify-center rounded-full bg-amber-50 p-2 sm:h-12 sm:w-12"
             }
             aria-hidden="true"
           >
@@ -83,7 +108,7 @@ const Footer = () => {
               dangerouslySetInnerHTML={{ __html: svgDiscord }}
             />
           </div>
-          <p className={"text-[1vw]"}>discord</p>
+          <p className={"text-xs sm:text-sm"}>discord</p>{" "}
         </Link>
       </div>
     </footer>
