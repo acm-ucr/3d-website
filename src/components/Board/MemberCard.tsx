@@ -1,6 +1,13 @@
 import BoxShadow from "@/components/BoxShadow";
+import Image, { StaticImageData } from "next/image";
 
-const MemberCard = () => {
+interface MemberCardProps {
+  name: string;
+  title: string;
+  image: StaticImageData;
+}
+
+const MemberCard = ({ name, title, image }: MemberCardProps) => {
   return (
     <BoxShadow
       boxColor="bg-3d-red-primary"
@@ -10,7 +17,14 @@ const MemberCard = () => {
       <div className="bg-3d-red-primary relative -bottom-5 flex h-80 w-60 items-center justify-center rounded-lg p-2.5">
         <div className="h-3/4 w-full rounded-xs border-4 border-white p-2">
           <div className="h-full w-full items-center justify-center border-gray-300 bg-gray-200">
-            {/* Placeholder for image */}
+            {
+              <Image
+                src={image}
+                alt={`${name}'s image`}
+                layout="fill"
+                objectFit="cover"
+              />
+            }
           </div>
           <BoxShadow
             boxColor="bg-3d-blue-primary"
@@ -18,8 +32,8 @@ const MemberCard = () => {
             boxPadding="pr-5 pl-5 py-2 relative -bottom-15 inset-x-1.5"
           >
             <div className="bg-3d-blue-primary font-francois items-center justify-center rounded-lg">
-              <p className="text-center text-2xl text-black">Timothy Lee</p>
-              <p className="text-center text-2xl text-black">President</p>
+              <p className="text-center text-2xl text-black">{name}</p>
+              <p className="text-center text-2xl text-black">{title}</p>
             </div>
           </BoxShadow>
         </div>
