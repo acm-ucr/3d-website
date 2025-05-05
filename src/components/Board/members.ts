@@ -1,5 +1,5 @@
-import TimothyImg from "@/public/board/TimothyPres.png";
-import IvanImg from "@/public/board/IvanVice.png";
+import TimothyImg from "@/public/board/TimothyPres.webp";
+import IvanImg from "@/public/board/IvanVice.webp";
 
 export const members = [
   {
