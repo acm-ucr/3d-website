@@ -194,7 +194,7 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <span className="text-3xl md:text-7xl">{"<"}</span>
+      <span className="text-4xl md:text-7xl">{"<"}</span>
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -224,7 +224,7 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <span className="text-3xl md:text-7xl">{">"}</span>
+      <span className="text-4xl md:text-7xl">{">"}</span>
       <span className="sr-only">Next slide</span>
     </Button>
   );

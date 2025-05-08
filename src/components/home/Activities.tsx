@@ -60,7 +60,7 @@ const Activities = () => {
           <CarouselContent>
             {activityImages.map((image, index) => (
               <CarouselItem key={index}>
-                <div className="relative mx-auto aspect-video max-w-[60vw] rounded-sm border-4 border-white md:border-8">
+                <div className="relative mx-auto aspect-video max-w-[70vw] rounded-sm border-4 border-white md:border-8">
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -73,15 +73,15 @@ const Activities = () => {
             ))}
           </CarouselContent>
         </div>
-        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-0 size-20 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:text-white" />
-        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-0 size-20 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:text-white" />
+        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-0 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:text-white md:size-20" />
+        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-0 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:text-white md:size-20" />
       </Carousel>
 
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
         boxPadding="px-16 py-3"
-        custom_style="mt-6 justify-center text-3xl md:text-5xl text-white pb-12"
+        custom_style="mt-6 justify-center text-3xl md:text-5xl text-white pb-8 md:pb-12"
       >
         {activityImages[index].alt}
       </BoxShadow>
