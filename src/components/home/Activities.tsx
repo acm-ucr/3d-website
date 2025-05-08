@@ -50,22 +50,22 @@ const Activities = () => {
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
-        boxPadding="px-8 py-3"
-        custom_style="text-5xl text-white ml-12 -translate-y-[6vh] relative"
+        boxPadding="px-8 py-2 md:py-3"
+        custom_style="text-2xl md:text-5xl text-white ml-6 md:ml-12 md:-translate-y-[6vh] pt-4 relative"
       >
         Activities:
       </BoxShadow>
-      <Carousel className="relative w-full" setApi={setApi}>
+      <Carousel className="relative mt-6 md:mt-0" setApi={setApi}>
         <div className="mx-auto w-full max-w-4xl">
           <CarouselContent>
             {activityImages.map((image, index) => (
               <CarouselItem key={index}>
-                <div className="relative aspect-video rounded-sm border-8 border-white">
+                <div className="relative mx-auto aspect-video max-w-[60vw] rounded-sm border-4 border-white md:border-8">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-cover p-4"
+                    className="object-cover p-2 md:p-4"
                     priority={index === 0}
                   />
                 </div>
@@ -81,7 +81,7 @@ const Activities = () => {
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
         boxPadding="px-16 py-3"
-        custom_style="mt-6 justify-center text-5xl text-white pb-12"
+        custom_style="mt-6 justify-center text-3xl md:text-5xl text-white pb-12"
       >
         {activityImages[index].alt}
       </BoxShadow>
