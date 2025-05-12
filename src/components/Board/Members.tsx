@@ -1,10 +1,10 @@
 import React from "react";
-import MemberCard from "./MemberCard";
-import { members } from "./members";
+import MemberCard from "@/components/Board/MemberCard";
+import { members } from "@/data/members";
 
 const Members = () => {
   return (
-    <div>
+    <div className="flex flex-wrap justify-center gap-10 py-25">
       {members.map((members, index) => (
         <MemberCard
           key={index}
