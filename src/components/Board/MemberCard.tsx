@@ -29,8 +29,12 @@ const MemberCard = ({ name, title, image }: MemberCardProps) => {
             boxPadding="pr-5 pl-5 py-2 relative -bottom-10 inset-x-1"
           >
             <div className="bg-3d-blue-primary font-francois items-center justify-center rounded-lg">
-              <p className="text-center text-2xl text-black">{name}</p>
-              <p className="text-center text-2xl text-black">{title}</p>
+              <p className="text-center text-2xl whitespace-nowrap text-black">
+                {name}
+              </p>
+              <p className="text-center text-2xl whitespace-nowrap text-black">
+                {title}
+              </p>
             </div>
           </BoxShadow>
         </div>
