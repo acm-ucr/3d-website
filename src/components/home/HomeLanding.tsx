@@ -16,7 +16,7 @@ const HomeLanding = () => {
         </BoxShadow>
       </div>
 
-      <div className="absolute right-0 bottom-1 mr-[7%] mb-[2vh] text-center text-[9px] md:bottom-2 md:mr-[10%] md:text-xl lg:bottom-4 lg:mr-[8%] lg:text-2xl 2xl:text-5xl">
+      <div className="absolute right-0 bottom-1 mr-[4%] mb-[3vh] text-center text-[9px] sm:mr-[2%] md:bottom-2 md:text-xl lg:bottom-4 lg:text-2xl 2xl:text-5xl">
         <BoxShadow
           boxColor=" bg-3d-blue-primary "
           boxShadow="shadow-3d-blue-secondary"
