@@ -4,37 +4,29 @@ import BoxShadow from "@/components/BoxShadow";
 
 const HomeLanding = () => {
   return (
-    <div className="relative flex h-[50%] w-full">
-      <div className="absolute top-0 left-0 flex h-screen w-1/2 items-start justify-start">
-        <div className="w-full px-[8%] py-[6%] text-center text-sm md:px-[10%] md:py-[5%] md:text-2xl lg:text-3xl 2xl:text-5xl">
-          {" "}
-          <BoxShadow
-            boxColor="bg-3d-blue-primary"
-            boxShadow="shadow-3d-blue-secondary"
-            boxPadding="px-[4%] py-[2%] md:px-[8%] md:py-[4%]"
-          >
-            3D Club @ UCR
-          </BoxShadow>
-        </div>
+    <div className="relative">
+      <div className="absolute top-0 left-0 mt-[2vh] ml-[2%] w-1/2 text-center text-xs md:text-2xl lg:text-3xl 2xl:text-6xl">
+        {" "}
+        <BoxShadow
+          boxColor="bg-3d-blue-primary"
+          boxShadow="shadow-3d-blue-secondary"
+          boxPadding="px-[4%] py-[2%] md:px-[8%]"
+        >
+          3D Club @ UCR
+        </BoxShadow>
       </div>
 
-      <div className="absolute right-0 bottom-5 flex h-screen w-1/2 items-end">
-        <div className="w-full py-[2%] pl-[2%] text-center text-xs text-black md:py-[6%] md:pl-[15%] md:text-xl lg:pl-[25%] lg:text-3xl 2xl:pl-[19%] 2xl:text-4xl">
-          <BoxShadow
-            boxColor=" bg-3d-blue-primary "
-            boxShadow="shadow-3d-blue-secondary"
-            boxPadding="px-[6%] py-[2%] md:px-[6%] md:py-[4%]"
-          >
-            Welcome to 3D Club at UCR!
-          </BoxShadow>
-        </div>
+      <div className="absolute right-0 bottom-1 mr-[7%] mb-[2vh] text-center text-[9px] md:bottom-2 md:mr-[10%] md:text-xl lg:bottom-4 lg:mr-[8%] lg:text-2xl 2xl:text-5xl">
+        <BoxShadow
+          boxColor=" bg-3d-blue-primary "
+          boxShadow="shadow-3d-blue-secondary"
+          boxPadding="px-[10%] py-[2%]"
+        >
+          Welcome to 3D Club at UCR!
+        </BoxShadow>
       </div>
 
-      <Image
-        src={HomeImage}
-        alt="3d people home-page"
-        className="w-screen bg-cover bg-center"
-      />
+      <Image src={HomeImage} alt="3d people home-page" className="w-screen" />
     </div>
   );
 };
