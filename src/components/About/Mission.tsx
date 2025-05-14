@@ -1,6 +1,6 @@
 import Image from "next/image";
 import BoxShadow from "@/components/BoxShadow";
-import BellTower from "@/public/about/mission.png";
+import BellTower from "@/public/about/mission.webp";
 
 const Mission = () => {
   return (
