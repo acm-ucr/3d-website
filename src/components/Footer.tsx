@@ -25,12 +25,12 @@ const Footer = () => {
   return (
     <div
       className={
-        "bg-3d-orange-primary font-francois-one flex flex-col items-center px-6 py-4 text-white sm:flex-row sm:px-8 sm:py-6 md:px-12"
+        "bg-3d-orange-primary font-francois-one flex flex-col items-center px-6 py-6 text-white sm:flex-row sm:px-8 sm:py-6 md:px-12"
       }
     >
       <div
         className={
-          "order-3 mt-2 mb-10 flex w-full items-center justify-center gap-x-4 sm:order-none sm:mt-0 sm:mb-0 sm:w-1/2 sm:justify-start"
+          "order-3 my-2 flex w-full items-center justify-center gap-x-4 sm:order-none sm:mt-0 sm:mb-0 sm:w-1/2 sm:justify-start"
         }
       >
         <p
