@@ -4,36 +4,29 @@ import BoxShadow from "@/components/BoxShadow";
 
 const HomeLanding = () => {
   return (
-    <div className="relative flex h-screen">
-      <div className="absolute top-0 left-0 flex h-screen w-1/2 items-start justify-start">
-        <div className="w-full px-[12%] py-[7.5%] text-center text-5xl">
-          {" "}
-          <BoxShadow
-            boxColor="bg-3d-blue-primary"
-            boxShadow="shadow-3d-blue-secondary"
-            boxPadding="px-[8%] py-[4%]"
-          >
-            3D Club @ UCR
-          </BoxShadow>
-        </div>
-      </div>
+    <div className="relative flex h-[60vh] sm:h-screen">
+      <BoxShadow
+        boxColor="bg-3d-blue-primary"
+        boxShadow="shadow-3d-blue-secondary"
+        boxPadding="px-[8%] py-[4%]"
+        custom_style="absolute text-xl sm:text-5xl text-center top-[8%] sm:top-[10%] left-[6%]"
+      >
+        3D Club @ UCR
+      </BoxShadow>
 
-      <div className="absolute right-0 bottom-5 flex h-screen w-1/2 items-end">
-        <div className="w-full py-[7.5%] pl-[25%] text-center text-3xl text-black">
-          <BoxShadow
-            boxColor=" bg-3d-blue-primary "
-            boxShadow="shadow-3d-blue-secondary"
-            boxPadding="px-[8%] py-[4%]"
-          >
-            Welcome to 3D Club at UCR!
-          </BoxShadow>
-        </div>
-      </div>
+      <BoxShadow
+        boxColor="bg-3d-blue-primary "
+        boxShadow="shadow-3d-blue-secondary"
+        boxPadding="px-[8%] py-[4%]"
+        custom_style="absolute text-lg sm:text-3xl text-center bottom-[10%] right-[6%]"
+      >
+        Welcome to 3D Club at UCR!
+      </BoxShadow>
 
       <Image
         src={HomeImage}
         alt="3d people home-page"
-        className="h-screen w-full object-cover"
+        className="h-[60vh] object-cover object-center sm:h-full sm:w-full"
       />
     </div>
   );
