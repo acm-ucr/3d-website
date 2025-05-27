@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/Logo.webp";
-import { siDiscord, siInstagram, siLinktree } from "simple-icons/icons";
+import { siDiscord, siInstagram, siLinktree } from "simple-icons";
 
 const SimpleIcon = ({
   path,
