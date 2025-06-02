@@ -16,8 +16,8 @@ const Landing = () => {
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
-        boxPadding="px-10 py-3"
-        custom_style="absolute top-[10%] w-full justify-center text-5xl text-white z-50"
+        boxPadding="px-5 py-1 sm:px-10 sm:py-3"
+        custom_style="absolute top-[10%] w-full justify-center text-xl sm:text-5xl text-white z-50"
       >
         Gallery:
       </BoxShadow>
