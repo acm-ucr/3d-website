@@ -9,7 +9,7 @@ export const members = [
   },
   {
     name: "Ivan Marozau",
-    title: "Vice President",
+    title: "Vice-President",
     image: IvanImg,
   },
 ];
