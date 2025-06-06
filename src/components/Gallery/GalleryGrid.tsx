@@ -1,6 +1,6 @@
 "use client";
 
-import { GalleryInfo } from "@/data/GalleryInfo";
+import GalleryInfo from "@/data/GalleryInfo";
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";

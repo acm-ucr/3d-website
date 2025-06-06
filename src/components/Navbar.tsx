@@ -18,7 +18,7 @@ const Navbar = () => {
           width={70}
           height={70}
           className="m-1 rounded-full border-2 border-amber-50"
-        ></Image>
+        />
         <Link href="/" className="px-5">
           3D Club
         </Link>
