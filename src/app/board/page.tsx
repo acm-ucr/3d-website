@@ -1,10 +1,10 @@
-import Members from "@/components/Board/Members";
+import Members from "@/components/board/members";
 
 const Board = () => {
   return (
-    <div className="bg-3d-orange-secondary px-10 py-10">
+    <>
       <Members />
-    </div>
+    </>
   );
 };
 

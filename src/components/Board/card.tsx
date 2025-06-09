@@ -1,4 +1,4 @@
-import BoxShadow from "@/components/BoxShadow";
+import BoxShadow from "@/components/box_shadow";
 import Image, { StaticImageData } from "next/image";
 
 interface MemberCardProps {

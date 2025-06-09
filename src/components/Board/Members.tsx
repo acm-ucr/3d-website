@@ -1,5 +1,5 @@
 import React from "react";
-import MemberCard from "@/components/Board/MemberCard";
+import MemberCard from "@/components/board/card";
 import { members } from "@/data/members";
 
 const Members = () => {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BoxShadow from "@/components/BoxShadow";
+import BoxShadow from "@/components/box_shadow";
 
 const NotFound = () => {
   return (

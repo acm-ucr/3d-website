@@ -1,14 +1,14 @@
-import Landing from "@/components/Gallery/Landing";
-import GalleryGrid from "@/components/Gallery/GalleryGrid";
-import NightForest from "@/components/Gallery/NightForest";
+import Landing from "@/components/gallery/landing";
+import GalleryGrid from "@/components/gallery/grid";
+import NightForest from "@/components/gallery/night_forest";
 
 const Gallery = () => {
   return (
-    <div className="bg-3d-orange-secondary">
+    <>
       <Landing />
       <GalleryGrid />
       <NightForest />
-    </div>
+    </>
   );
 };
 
