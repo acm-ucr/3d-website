@@ -20,7 +20,7 @@ import origami2 from "@/public/home/activities/origami_2.webp";
 import shrekiversary1 from "@/public/home/activities/shrekiversary_1.webp";
 import shrekiversary2 from "@/public/home/activities/shrekiversary_2.webp";
 
-import BoxShadow from "../BoxShadow";
+import BoxShadow from "../box_shadow";
 
 const Activities = () => {
   const [index, setIndex] = useState(0);

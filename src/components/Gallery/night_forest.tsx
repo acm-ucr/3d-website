@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Forest from "@/public/gallery/forest.webp";
-import BoxShadow from "../BoxShadow";
+import BoxShadow from "../box_shadow";
 
 const NightForest = () => {
   return (

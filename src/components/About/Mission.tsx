@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BoxShadow from "@/components/BoxShadow";
+import BoxShadow from "@/components/box_shadow";
 import BellTower from "@/public/about/mission.webp";
 
 const Mission = () => {

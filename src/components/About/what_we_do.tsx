@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import CraftPicture from "@/public/about/CraftPicture.webp";
-import BoxShadow from "../BoxShadow";
+import BoxShadow from "../box_shadow";
 import Title from "../title";
 import { motion } from "motion/react";
 

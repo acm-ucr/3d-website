@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BoxShadow from "../BoxShadow";
+import BoxShadow from "../box_shadow";
 // object-[center_20%]
 const Landing = () => {
   return (

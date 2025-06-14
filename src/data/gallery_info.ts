@@ -13,7 +13,7 @@ import Sleepy2197_1_Lamp from "@/public/gallery/grid/Sleepy2197_1_Lamp.webp";
 import TimothyLee_MonkeyHead from "@/public/gallery/grid/TimothyLee_MonkeyHead.webp";
 import Zach_House from "@/public/gallery/grid/Zach_House.webp";
 
-export const GalleryInfo = [
+const GalleryInfo = [
   {
     image: Ivan_Boat,
     alt: "3D cargo ship in a river",
@@ -85,3 +85,5 @@ export const GalleryInfo = [
     artist: "Ivan",
   },
 ];
+
+export default GalleryInfo;
