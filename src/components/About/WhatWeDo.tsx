@@ -7,7 +7,7 @@ import Title from "../title";
 import { motion } from "motion/react";
 
 const BounceIn = {
-  initial: { opacity: 0, y: -50 },
+  initial: { opacity: 0, y: -25 },
   animate: (custom: number) => ({
     opacity: 1,
     y: 0,
@@ -40,7 +40,7 @@ const WhatWeDo = () => {
           What We Do:
         </Title>
       </motion.div>
-      <div className="flex flex-col items-center justify-center md:block md:py-10">
+      <div className="flex flex-col items-center md:block md:py-10">
         <div className="relative md:absolute md:top-[18%] md:left-[40%] xl:left-[45%]">
           <motion.div
             variants={FadeIn}
@@ -141,11 +141,12 @@ const WhatWeDo = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
+          className="flex w-full justify-center md:block"
         >
           <Image
             src={CraftPicture}
             alt="People doing crafts"
-            className="relative w-2/5 pt-5 md:mt-0 md:ml-5 xl:ml-15"
+            className="w-2/5 pt-5 md:mt-0 md:ml-5 xl:ml-15"
           />
         </motion.div>
       </div>
