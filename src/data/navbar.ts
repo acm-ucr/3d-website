@@ -1,5 +1,5 @@
 export const tags = [
-  { name: "About", link: "/about" },
-  { name: "Board", link: "/board" },
-  { name: "Gallery", link: "/gallery" },
+  { name: "ABOUT", link: "/about" },
+  { name: "BOARD", link: "/board" },
+  { name: "GALLERY", link: "/gallery" },
 ];

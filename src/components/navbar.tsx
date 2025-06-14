@@ -4,7 +4,6 @@ import { tags } from "@/data/navbar";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/Logo.webp";
-// import WebMarker from "@/public/WebMarker.svg";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { useState } from "react";
@@ -18,20 +17,19 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative z-50">
-      <nav className="font-francois-one bg-3d-orange-primary py-1/2 flex flex-row items-center px-2 text-xs text-amber-50 md:px-4 md:text-2xl lg:text-4xl">
-        <div className="flex w-1/2 items-center justify-start">
+    <div className="font-francois-one bg-3d-orange-primary relative z-50">
+      <nav className="flex flex-row items-center px-[4%] text-xl text-amber-50 md:px-4 md:text-2xl lg:text-4xl">
+        <Link
+          href="/"
+          className="flex w-1/2 items-center justify-start px-2 py-4"
+        >
           <Image
             src={Logo}
             alt="Logo"
-            width={70}
-            height={70}
-            className="text-md m-1 h-10 w-10 rounded-full border-2 border-amber-50 md:h-1/6 md:w-1/6"
-          ></Image>
-          <Link href="/" className="px-2 md:px-4 lg:px-6">
-            3D Club
-          </Link>
-        </div>
+            className="h-10 w-auto rounded-full border-2 border-amber-50 sm:h-20"
+          />
+          <p className="px-2 md:px-4 lg:px-6">3D Club</p>
+        </Link>
 
         {/* Mobile menu icon */}
         <div className="ml-auto md:hidden" onClick={toggleMobileMenu}>
@@ -39,15 +37,15 @@ const Navbar = () => {
         </div>
 
         {/* bigger screens - nav items*/}
-        <div className="hidden items-center gap-x-4 px-4 sm:w-1/2 sm:justify-end md:flex lg:gap-x-12 lg:px-6">
+        <div className="hidden items-center gap-x-4 px-4 sm:w-1/2 sm:justify-end sm:gap-x-[12%] md:flex lg:px-6">
           {tags.map(({ link, name }) => (
             <div key={link}>
               <Link
                 href={link}
                 className={`${
                   pathname === link
-                    ? "underline decoration-[6px] underline-offset-[10px]"
-                    : "hover:text-white"
+                    ? "underline decoration-[3px] underline-offset-[10px]"
+                    : "hover:opacity-90"
                 }`}
               >
                 {name}
@@ -59,15 +57,18 @@ const Navbar = () => {
 
       {/*dropdown part*/}
       {isMobileMenuOpen && (
-        <div className="bg-3d-orange-primary font-francois-one absolute top-full right-0 flex w-[22%] flex-col gap-2 px-2 text-center text-white shadow-lg md:hidden">
+        <div className="bg-3d-orange-primary absolute top-full right-0 flex w-[22%] flex-col gap-2 py-1 text-center text-white shadow-lg md:hidden">
           {tags.map(({ name, link }) => (
             <Link
               key={link}
               href={link}
-              className="text-xs hover:underline"
+              className="text-md"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {name.toUpperCase()}
+              {name}
+              {name != "GALLERY" && (
+                <div className="mt-1 h-0 w-full border-[0.5px] border-amber-50" />
+              )}
             </Link>
           ))}
         </div>
