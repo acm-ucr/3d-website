@@ -1,4 +1,4 @@
-import BoxShadow from "@/components/BoxShadow";
+import BoxShadow from "@/components/box_shadow";
 import Image from "next/image";
 import Background from "@/public/home/interest.webp";
 

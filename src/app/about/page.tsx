@@ -1,12 +1,12 @@
-import Mission from "@/components/About/Mission";
-import WhatWeDo from "@/components/About/WhatWeDo";
+import Mission from "@/components/about/mission";
+import WhatWeDo from "@/components/about/what_we_do";
 
 const About = () => {
   return (
-    <div>
+    <>
       <Mission />
       <WhatWeDo />
-    </div>
+    </>
   );
 };
 

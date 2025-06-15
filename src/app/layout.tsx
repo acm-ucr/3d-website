@@ -1,10 +1,8 @@
 import "./globals.css";
-// import { Inter } from "next/font/google";
 import { Francois_One, Fraunces } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-// const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const francois_one = Francois_One({
   subsets: ["latin"],
@@ -31,7 +29,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${fraunces.className} ${francois_one.variable}`}>
+      <body
+        className={`${fraunces.className} ${francois_one.variable} bg-3d-orange-secondary`}
+      >
         <ReactQueryClientProvider>
           <Navbar />
           {children}

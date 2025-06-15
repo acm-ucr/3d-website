@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HomeImage from "@/public/gallery/Clay2 1.webp";
-import BoxShadow from "@/components/BoxShadow";
+import BoxShadow from "@/components/box_shadow";
 
 const HomeLanding = () => {
   return (

@@ -20,7 +20,7 @@ import origami2 from "@/public/home/activities/origami_2.webp";
 import shrekiversary1 from "@/public/home/activities/shrekiversary_1.webp";
 import shrekiversary2 from "@/public/home/activities/shrekiversary_2.webp";
 
-import BoxShadow from "../BoxShadow";
+import BoxShadow from "../box_shadow";
 
 const Activities = () => {
   const [index, setIndex] = useState(0);
@@ -58,12 +58,12 @@ const Activities = () => {
       <Carousel className="relative mt-6 md:mt-0" setApi={setApi}>
         <div className="mx-auto w-full max-w-4xl">
           <CarouselContent>
-            {activityImages.map((image, index) => (
+            {activityImages.map(({ src, alt }, index) => (
               <CarouselItem key={index}>
                 <div className="relative mx-auto aspect-video max-w-[70vw] rounded-sm border-4 border-white md:border-8">
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={src}
+                    alt={alt}
                     fill
                     className="object-cover p-2 md:p-4"
                     priority={index === 0}
@@ -73,8 +73,8 @@ const Activities = () => {
             ))}
           </CarouselContent>
         </div>
-        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-0 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:text-white md:size-20" />
-        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-0 size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:text-white md:size-20" />
+        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-[2%] size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:cursor-pointer hover:text-white hover:opacity-90 md:size-20" />
+        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-[2%] size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:cursor-pointer hover:text-white hover:opacity-90 md:size-20" />
       </Carousel>
 
       <BoxShadow
