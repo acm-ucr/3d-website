@@ -1,18 +1,18 @@
 import Image from "next/image";
 import BoxShadow from "../box_shadow";
-// object-[center_20%]
+import GalleryLandingImg from "@/public/gallery/background.webp";
+
 const Landing = () => {
   return (
     <div className="relative">
       <Image
-        src="/gallery/background.webp"
+        src={GalleryLandingImg}
         alt="Gallery background"
         width={500}
         height={500}
         className="h-auto w-full"
       />
 
-      {/* <div className="absolute flex w-full justify-center pt-12"> */}
       <BoxShadow
         boxColor="bg-3d-red-primary"
         boxShadow="shadow-3d-red-secondary"
@@ -21,7 +21,6 @@ const Landing = () => {
       >
         Gallery:
       </BoxShadow>
-      {/* </div> */}
     </div>
   );
 };

@@ -58,12 +58,12 @@ const Activities = () => {
       <Carousel className="relative mt-6 md:mt-0" setApi={setApi}>
         <div className="mx-auto w-full max-w-4xl">
           <CarouselContent>
-            {activityImages.map((image, index) => (
+            {activityImages.map(({ src, alt }, index) => (
               <CarouselItem key={index}>
                 <div className="relative mx-auto aspect-video max-w-[70vw] rounded-sm border-4 border-white md:border-8">
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={src}
+                    alt={alt}
                     fill
                     className="object-cover p-2 md:p-4"
                     priority={index === 0}
