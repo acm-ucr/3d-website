@@ -18,3 +18,5 @@ const Members = () => {
 };
 
 export default Members;
+
+// for the lowercase change

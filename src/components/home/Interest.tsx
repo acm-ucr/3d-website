@@ -41,3 +41,5 @@ const Interest = () => (
 );
 
 export default Interest;
+
+// for the lowercase change

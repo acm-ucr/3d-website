@@ -90,3 +90,5 @@ const Activities = () => {
 };
 
 export default Activities;
+
+// for the lowercase change
