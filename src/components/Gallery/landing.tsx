@@ -26,5 +26,3 @@ const Landing = () => {
 };
 
 export default Landing;
-
-// for the lowercase change
