@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BoxShadow from "@/components/BoxShadow";
+import BoxShadow from "@/components/box_shadow";
 import BellTower from "@/public/about/mission.webp";
 
 const Mission = () => {
@@ -18,9 +18,10 @@ const Mission = () => {
           boxColor="bg-3d-blue-primary"
           boxShadow="shadow-3d-blue-secondary"
           boxPadding="px-2 py-1 sm:px-4 sm:py-2"
-          custom_style="text-xs sm:text-xl md:text-2xl text-black"
         >
-          Our Mission:
+          <p className="text-xs text-black sm:text-xl md:text-2xl">
+            Our Mission:
+          </p>
         </BoxShadow>
       </div>
 
@@ -29,10 +30,11 @@ const Mission = () => {
           boxColor="bg-3d-blue-primary"
           boxShadow="shadow-3d-blue-secondary"
           boxPadding="px-2 py-1 sm:px-4 sm:py-2"
-          custom_style="text-[8px] sm:text-base md:text-xl text-black text-center"
         >
-          We aim to create a supportive environment where students can share and
-          get advice on 3D art and projects.
+          <p className="text-center text-[8px] text-black sm:text-base md:text-xl">
+            We aim to create a supportive environment where students can share
+            and get advice on 3D art and projects.
+          </p>
         </BoxShadow>
       </div>
     </div>
@@ -40,3 +42,5 @@ const Mission = () => {
 };
 
 export default Mission;
+
+// for the lowercase change

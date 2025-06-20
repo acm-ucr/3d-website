@@ -4,8 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@config '../../tailwind.config.ts';
-
 @theme {
   --color-3d-orange-primary: #d95d39;
   --color-3d-orange-secondary: #c98b6acc;
@@ -131,5 +129,15 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .shadow-3d-blue-secondary {
+    box-shadow: 8px 8px 0px 0px #2a68df;
+  }
+
+  .shadow-3d-red-secondary {
+    box-shadow: 8px 8px 0px 0px #942f30;
   }
 }

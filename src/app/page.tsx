@@ -1,6 +1,6 @@
-import HomeLanding from "@/components/home/HomeLanding";
-import Interest from "@/components/home/Interest";
-import Activities from "@/components/home/Activities";
+import HomeLanding from "@/components/home/landing";
+import Interest from "@/components/home/interest";
+import Activities from "@/components/home/activities";
 const Home = () => {
   return (
     <>
