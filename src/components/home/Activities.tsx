@@ -47,14 +47,15 @@ const Activities = () => {
 
   return (
     <div className="bg-3d-orange-secondary w-full">
-      <BoxShadow
-        boxColor="bg-3d-red-primary"
-        boxShadow="shadow-3d-red-secondary"
-        boxPadding="px-8 py-2 md:py-3"
-        custom_style="text-2xl md:text-5xl text-white ml-6 md:ml-12 md:-translate-y-[6vh] pt-4 relative"
-      >
-        Activities:
-      </BoxShadow>
+      <div className="relative ml-6 w-max pt-4 md:ml-12 md:-translate-y-[6vh]">
+        <BoxShadow
+          boxColor="bg-3d-red-primary"
+          boxShadow="shadow-3d-red-secondary"
+          boxPadding="px-8 py-2 md:py-3"
+        >
+          <p className="text-2xl text-white md:text-5xl">Activities:</p>
+        </BoxShadow>
+      </div>
       <Carousel className="relative mt-6 md:mt-0" setApi={setApi}>
         <div className="mx-auto w-full max-w-4xl">
           <CarouselContent>
@@ -73,18 +74,20 @@ const Activities = () => {
             ))}
           </CarouselContent>
         </div>
-        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 left-[2%] size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:cursor-pointer hover:text-white hover:opacity-90 md:size-20" />
-        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/90 absolute top-1/2 right-[2%] size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:cursor-pointer hover:text-white hover:opacity-90 md:size-20" />
+        <CarouselPrevious className="bg-3d-red-primary hover:bg-3d-red-primary/50 absolute top-1/2 left-[2%] size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:cursor-pointer hover:text-white hover:opacity-90 md:size-20" />
+        <CarouselNext className="bg-3d-red-primary hover:bg-3d-red-primary/50 absolute top-1/2 right-[2%] size-12 -translate-y-1/2 rounded-sm border-0 text-white shadow-xl hover:cursor-pointer hover:text-white hover:opacity-90 md:size-20" />
       </Carousel>
-
-      <BoxShadow
-        boxColor="bg-3d-red-primary"
-        boxShadow="shadow-3d-red-secondary"
-        boxPadding="px-16 py-3"
-        custom_style="mt-6 justify-center text-3xl md:text-5xl text-white pb-8 md:pb-12"
-      >
-        {activityImages[index].alt}
-      </BoxShadow>
+      <div className="mx-auto mt-6 w-max pb-8 md:pb-12">
+        <BoxShadow
+          boxColor="bg-3d-red-primary"
+          boxShadow="shadow-3d-red-secondary"
+          boxPadding="px-16 py-3"
+        >
+          <p className="text-3xl text-white md:text-5xl">
+            {activityImages[index].alt}
+          </p>
+        </BoxShadow>
+      </div>
     </div>
   );
 };

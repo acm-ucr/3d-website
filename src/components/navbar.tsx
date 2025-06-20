@@ -1,6 +1,6 @@
 "use client";
 
-import { tags } from "@/data/navbar";
+import tags from "@/data/navbar";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/Logo.webp";

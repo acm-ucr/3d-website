@@ -12,15 +12,15 @@ const Landing = () => {
         height={500}
         className="h-auto w-full"
       />
-
-      <BoxShadow
-        boxColor="bg-3d-red-primary"
-        boxShadow="shadow-3d-red-secondary"
-        boxPadding="px-5 py-1 sm:px-10 sm:py-3"
-        custom_style="absolute top-[10%] w-full justify-center text-xl sm:text-5xl text-white z-50"
-      >
-        Gallery:
-      </BoxShadow>
+      <div className="absolute top-[10%] flex w-full justify-center">
+        <BoxShadow
+          boxColor="bg-3d-red-primary"
+          boxShadow="shadow-3d-red-secondary"
+          boxPadding="px-5 py-1 sm:px-10 sm:py-3"
+        >
+          <p className="text-xl text-white sm:text-5xl">Gallery:</p>
+        </BoxShadow>
+      </div>
     </div>
   );
 };

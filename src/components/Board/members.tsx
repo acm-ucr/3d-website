@@ -1,6 +1,6 @@
 import React from "react";
-import MemberCard from "@/components/board/card";
-import { members } from "@/data/members";
+import MemberCard from "@/components/Board/card";
+import members from "@/data/members";
 
 const Members = () => {
   return (
@@ -11,7 +11,7 @@ const Members = () => {
           name={members.name}
           title={members.title}
           image={members.image}
-        ></MemberCard>
+        />
       ))}
     </div>
   );

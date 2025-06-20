@@ -1,7 +1,7 @@
 import TimothyImg from "@/public/board/TimothyPres.webp";
 import IvanImg from "@/public/board/IvanVice.webp";
 
-export const members = [
+const members = [
   {
     name: "Timothy Lee",
     title: "President",
