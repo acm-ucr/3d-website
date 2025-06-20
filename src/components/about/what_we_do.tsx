@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import CraftPicture from "@/public/about/CraftPicture.webp";
-import BoxShadow from "../box_shadow";
-import Title from "../title";
+import BoxShadow from "@/components/box_shadow";
+import Title from "@/components/title";
 import { motion } from "motion/react";
 
 const BounceIn = {
@@ -27,18 +27,16 @@ const FadeIn = {
 
 const WhatWeDo = () => {
   return (
-    <div className="bg-3d-orange-secondary relative overflow-hidden py-3 md:py-10">
+    <div className="bg-3d-orange-secondary relative py-3 md:py-10">
       <motion.div
         variants={BounceIn}
         viewport={{ once: true, amount: 0 }}
         initial="initial"
         whileInView={"animate"}
         custom={0.2}
-        className="md:flex md:justify-center"
+        className="flex justify-center"
       >
-        <Title textSize="text-xl relative left-[10%] md:text-5xl xl:text-6xl">
-          What We Do:
-        </Title>
+        <Title textSize="text-xl md:text-5xl xl:text-6xl">What We Do:</Title>
       </motion.div>
       <div className="flex flex-col items-center md:block md:py-10">
         <div className="relative md:absolute md:top-[18%] md:left-[40%] xl:left-[45%]">
@@ -48,12 +46,12 @@ const WhatWeDo = () => {
             initial="initial"
             whileInView={"animate"}
             custom={0.2}
+            className="z-50 mt-5 w-full text-[8px] text-white md:mt-10 md:ml-10 md:text-sm lg:mt-5 lg:text-xl xl:mt-10 xl:text-2xl"
           >
             <BoxShadow
               boxColor="bg-3d-red-primary"
               boxShadow="shadow-3d-red-secondary"
               boxPadding="px-2 py-1 md:px-3 lg:px-5 md:py-3"
-              custom_style="text-[8px] md:text-sm lg:text-xl xl:text-2xl mt-5 md:mt-10 lg:mt-5 xl:mt-10 md:ml-10 text-white z-50 w-full"
             >
               Weekly meetings:
               <ul className="block list-disc pl-4 md:hidden">
@@ -80,12 +78,12 @@ const WhatWeDo = () => {
             initial="initial"
             whileInView={"animate"}
             custom={0.3}
+            className="z-50 mt-5 ml-10 w-full text-[8px] text-white md:ml-20 md:text-sm lg:ml-10 lg:text-xl xl:mt-10 xl:ml-30 xl:text-2xl"
           >
             <BoxShadow
               boxColor="bg-3d-red-primary"
               boxShadow="shadow-3d-red-secondary"
               boxPadding="px-2 py-1 md:px-3 lg:px-5 md:py-3"
-              custom_style="ml-10 text-[8px] md:text-sm lg:text-xl xl:text-2xl mt-5 xl:mt-10 md:ml-20 lg:ml-10 xl:ml-30 text-white z-50 w-full"
             >
               Collaborations:
               <ul className="block list-disc pl-4 md:hidden">
@@ -110,12 +108,12 @@ const WhatWeDo = () => {
             initial="initial"
             whileInView={"animate"}
             custom={0.4}
+            className="z-50 mt-5 w-full text-[8px] text-white md:ml-10 md:text-sm lg:text-xl xl:mt-10 xl:text-2xl"
           >
             <BoxShadow
               boxColor="bg-3d-red-primary"
               boxShadow="shadow-3d-red-secondary"
               boxPadding="px-2 py-1 md:px-3 lg:px-5 md:py-3"
-              custom_style="text-[8px] md:text-sm lg:text-xl xl:text-2xl mt-5 xl:mt-10 md:ml-10 text-white z-50 w-full"
             >
               Past Collaborations:
               <ul className="block list-disc pl-4 md:pl-6 xl:hidden">

@@ -19,8 +19,8 @@ const GalleryGrid = () => {
   const [pressedImage, setPressedImage] = useState(-1);
 
   return (
-    <div className="grid grid-cols-5 grid-rows-9 gap-1 p-[1%] md:gap-3">
-      {GalleryInfo.map((item, index) => (
+    <div className="grid grid-cols-5 grid-rows-9 gap-1 p-2 md:gap-3">
+      {GalleryInfo.map(({ image, alt, artist }, index) => (
         <div
           key={index}
           className={`${index === 3 || index === 4 || index === 5 || index === 8 || index === 9 || index === 13 ? "row-span-2" : "row-span-3"} ${index === 0 || index === 6 || index === 12 ? "col-span-2" : "col-span-1"}`}
@@ -42,8 +42,8 @@ const GalleryGrid = () => {
               custom={0}
             >
               <Image
-                src={item.image}
-                alt={item.alt}
+                src={image}
+                alt={alt}
                 className="active:scale-105 lg:hover:scale-105"
               />
             </motion.div>
@@ -52,7 +52,7 @@ const GalleryGrid = () => {
               <div className="absolute right-0 bottom-0 hidden p-1 md:p-3 lg:block">
                 <div className="inline text-[8px] text-white md:text-sm lg:text-xl xl:text-2xl">
                   Artist:{" "}
-                  {item.artist.split("").map((letter, index) => (
+                  {artist.split("").map((letter, index) => (
                     <motion.p
                       key={index}
                       initial={{ opacity: 0, x: -25, scale: 3 }}
@@ -75,7 +75,7 @@ const GalleryGrid = () => {
             {pressedImage === index && (
               <div className="absolute right-0 bottom-0 p-1 md:p-3 lg:hidden">
                 <p className="text-[8px] text-white md:text-sm lg:text-xl xl:text-2xl">
-                  Artist: {item.artist}
+                  Artist: {artist}
                 </p>
               </div>
             )}
