@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import CraftPicture from "@/public/about/CraftPicture.webp";
-import BoxShadow from "../box_shadow";
-import Title from "../title";
+import BoxShadow from "@/components/box_shadow";
+import Title from "@/components/title";
 import { motion } from "motion/react";
 
 const BounceIn = {

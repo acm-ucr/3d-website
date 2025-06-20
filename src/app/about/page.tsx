@@ -1,4 +1,4 @@
-import Mission from "@/components/About/mission";
+import Mission from "@/components/about/mission";
 import WhatWeDo from "@/components/about/what_we_do";
 
 const About = () => {

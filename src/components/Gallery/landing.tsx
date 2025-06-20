@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BoxShadow from "../box_shadow";
+import BoxShadow from "@/components/box_shadow";
 import GalleryLandingImg from "@/public/gallery/background.webp";
 
 const Landing = () => {
