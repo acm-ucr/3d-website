@@ -78,7 +78,7 @@ const WhatWeDo = () => {
             initial="initial"
             whileInView={"animate"}
             custom={0.3}
-            className="z-50 mt-5 ml-10 w-full text-[8px] text-white md:ml-20 md:text-sm lg:ml-10 lg:text-xl xl:mt-10 xl:ml-30 xl:text-2xl"
+            className="z-50 mt-5 ml-4 w-full text-[8px] text-white md:ml-20 md:text-sm lg:ml-10 lg:text-xl xl:mt-10 xl:ml-30 xl:text-2xl"
           >
             <BoxShadow
               boxColor="bg-3d-red-primary"
